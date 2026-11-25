@@ -1,0 +1,29 @@
+# Build output (all variants: release, debug, asan, tsan)
+build/
+
+# Stray object, dependency and binary files
+*.o
+*.d
+*.a
+*.so
+
+# Core dumps (from crashes and GDB sessions)
+core
+core.*
+vgcore.*
+
+# Debugger and analysis artifacts
+.gdb_history
+callgrind.out.*
+*.log
+
+# Python test tooling (tests/e2e.py)
+__pycache__/
+*.pyc
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
